@@ -18,7 +18,7 @@
       <a href="./about.html">About</a>
       <a href="./#contact">Contact</a>
     </nav>
-    <a href="./#contact" class="nav-cta">Let's talk →</a>
+    <a href="./#contact" class="nav-cta">Let's talk</a>
     <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </header>
 
@@ -28,46 +28,78 @@
   </button>
 
   <main>
-    <section class="hero container" style="min-height:auto;padding:180px 0 40px;">
+    <section class="hero container" style="min-height:auto;padding:200px 0 40px;">
       <span class="hero-hi" data-reveal>Work</span>
       <h1 class="hero-name" data-reveal data-reveal-delay="1">
         featured<br/>projects<span class="accent">.</span>
       </h1>
       <p class="hero-sub" data-reveal data-reveal-delay="2">
-        These selected projects reflect my passion for blending strategy
-        with creativity — solving real problems through thoughtful design
-        and impactful storytelling.
+        Projects that blend strategy with creativity — solving real
+        problems through thoughtful design and impactful storytelling.
       </p>
     </section>
 
-    <section class="container">
-      <div class="project-list">
-        <a class="project" href="./projects/appss.html" data-reveal>
-          <span class="project-tag">UI / UX Design</span>
-          <h3>@Appss</h3>
-          <p>Participated in the design of the application catalog for Telegram.</p>
-          <span class="project-arrow">↗</span>
+    <section class="container" style="padding-top:60px;">
+      <div class="project-grid">
+        <a class="project-card" href="./projects/appss.html" data-reveal>
+          <div class="project-thumb"><span class="glyph">@A</span></div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-tag">UI / UX Design</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3>@Appss</h3>
+            <p>Design of the application catalog for Telegram — structured flows, clear hierarchy.</p>
+            <div class="project-foot">
+              <span><strong>2025</strong> · Year</span>
+              <span><strong>EngageLabs</strong> · Client</span>
+              <span><strong>10 months</strong> · Duration</span>
+            </div>
+          </div>
         </a>
-        <a class="project" href="./projects/creative-posts.html" data-reveal>
-          <span class="project-tag">Marketing Creatives</span>
-          <h3>Creative Posts</h3>
-          <p>Creation of creatives for various platforms.</p>
-          <span class="project-arrow">↗</span>
+
+        <a class="project-card" href="./projects/creative-posts.html" data-reveal data-reveal-delay="1">
+          <div class="project-thumb"><span class="glyph">CP</span></div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-tag">Marketing Creatives</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3>Creative Posts</h3>
+            <p>Marketing creatives for multiple platforms — conversion-first visuals, a flexible system.</p>
+            <div class="project-foot">
+              <span><strong>2025</strong> · Year</span>
+              <span><strong>EngageLabs</strong> · Client</span>
+              <span><strong>2 months</strong> · Duration</span>
+            </div>
+          </div>
         </a>
       </div>
     </section>
   </main>
 
   <footer class="footer container">
-    <div class="footer-inner">
-      <span class="logo">LiQuId</span>
-      <nav class="footer-links">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">LiQuId</span>
+        <p>Indonesia-based digital designer. Interfaces, marketing visuals, and brand systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
         <a href="./">Home</a>
         <a href="./projects.html">Projects</a>
         <a href="./about.html">About</a>
         <a href="./#contact">Contact</a>
-      </nav>
-      <span class="muted">© <span id="year"></span> Romanenkov Kirill</span>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:zhscherry@gmail.com">zhscherry@gmail.com</a>
+        <a href="https://t.me/LiQuId_02" target="_blank" rel="noopener">@LiQuId_02</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Romanenkov Kirill</span>
+      <span>Made with care 🖤</span>
     </div>
   </footer>
 
