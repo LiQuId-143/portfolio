@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Posts — Marketing Creatives · LiQuId</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="../" class="logo">LiQuId</a>
+    <nav class="nav-links">
+      <a href="../">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../about.html">About</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <a href="../#contact" class="nav-cta">Let's talk →</a>
+    <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <button class="theme-toggle" aria-label="Toggle theme">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+
+  <main class="project-detail container">
+    <a href="../projects.html" class="back" data-reveal>← All projects</a>
+    <span class="tag-pill" data-reveal>Marketing Creatives</span>
+    <h1 data-reveal data-reveal-delay="1">creative posts</h1>
+    <p class="lead" data-reveal data-reveal-delay="2">
+      Creation of creatives for various platforms.
+    </p>
+
+    <dl class="meta-grid" data-reveal>
+      <div><dt>Year :</dt><dd>2025</dd></div>
+      <div><dt>Industry :</dt><dd>Marketing</dd></div>
+      <div><dt>Client :</dt><dd>EngageLabs</dd></div>
+      <div><dt>Project Duration :</dt><dd>2 months</dd></div>
+    </dl>
+
+    <article class="content-block" data-reveal>
+      <h3>Overview</h3>
+      <p>I worked on creating marketing creatives for EngageLabs, focusing
+        on visually compelling and conversion-driven designs.</p>
+    </article>
+
+    <article class="content-block" data-reveal>
+      <h3>Challenge<br/>Creativity vs Performance</h3>
+      <p>One of the main challenges was balancing creativity with
+        performance — some designs looked visually appealing but didn't
+        convert effectively.</p>
+    </article>
+
+    <article class="content-block" data-reveal>
+      <h3>Solution<br/>Design System</h3>
+      <p>I addressed this by building a flexible design system with
+        reusable components, ensuring both consistency and scalability.</p>
+    </article>
+
+    <div style="margin-top:56px;display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="../projects/appss.html" class="btn">Next project →</a>
+      <a href="../projects.html" class="btn outline">All projects</a>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <span class="logo">LiQuId</span>
+      <nav class="footer-links">
+        <a href="../">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <span class="muted">© <span id="year"></span> Romanenkov Kirill</span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

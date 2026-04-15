@@ -1,26 +1,33 @@
 # LiQuId — Portfolio
 
-Exact HTML mirror of the Framer portfolio at
-https://stale-assistant-536643-b4b367fe9.framer.app/
+Clean HTML/CSS/JS portfolio for Romanenkov Kirill, Indonesia-based digital designer.
 
-Pages:
-- `index.html` — home
-- `about.html` — about
+## Pages
+
+- `index.html` — home (hero, services, projects, contact form)
+- `about.html` — about & services
 - `projects.html` — projects index
-- `projects/shopease-redesign-sprint.html`
-- `projects/summer-vibes-festival-campaign.html`
+- `projects/appss.html` — UI / UX case study
+- `projects/creative-posts.html` — Marketing Creatives case study
 
-All assets (fonts, images, bundled JS) are served from Framer's CDN, so the
-site is a single-file-per-page static copy with the original look,
-typography, and animations intact.
+## Features
 
-## Serve locally
+- Dark / light theme with sticky toggle that follows scroll (bottom-right)
+- Fully responsive (mobile burger nav, stacked grids)
+- Scroll-triggered reveal animations (IntersectionObserver)
+- Interactive service cards with cursor-tracking spotlight
+- Marquee, hover micro-interactions
+- Contact form → opens `mailto:` with pre-filled subject & body
+- Antonio (display) + Inter (body) typography
+- Accent: `#8c29ff`
+
+## Run
 
 ```
 python3 -m http.server 8000
-# open http://localhost:8000/
 ```
 
 ## Deploy
 
-Works on GitHub Pages, Netlify, Vercel — no build step.
+Works on GitHub Pages, Netlify, Vercel — no build step. For GitHub Pages:
+Settings → Pages → Source: `main` / root.
