@@ -1,33 +1,42 @@
-# LiQuId — Portfolio
+# LiQuId — Portfolio (static extract)
 
-Clean HTML/CSS/JS portfolio for Romanenkov Kirill, Indonesia-based digital designer.
+Static copy of Romanenkov Kirill's portfolio, extracted from the rendered
+Framer site via Playwright. All assets are local; no Framer dependencies or
+branding remain.
 
-## Pages
+## Structure
 
-- `index.html` — home (hero, services, projects, contact form)
-- `about.html` — about & services
-- `projects.html` — projects index
-- `projects/appss.html` — UI / UX case study
-- `projects/creative-posts.html` — Marketing Creatives case study
+```
+/
+├── index.html
+├── about.html
+├── projects.html
+├── projects/
+│   ├── appss.html
+│   └── creative-posts.html
+├── assets/
+│   ├── fonts/        # woff2 files
+│   └── images/       # png/jpg/svg
+└── js/               # runtime modules
+```
 
-## Features
-
-- Dark / light theme with sticky toggle that follows scroll (bottom-right)
-- Fully responsive (mobile burger nav, stacked grids)
-- Scroll-triggered reveal animations (IntersectionObserver)
-- Interactive service cards with cursor-tracking spotlight
-- Marquee, hover micro-interactions
-- Contact form → opens `mailto:` with pre-filled subject & body
-- Antonio (display) + Inter (body) typography
-- Accent: `#8c29ff`
-
-## Run
+## Run locally
 
 ```
 python3 -m http.server 8000
 ```
 
+Then open http://localhost:8000/
+
 ## Deploy
 
-Works on GitHub Pages, Netlify, Vercel — no build step. For GitHub Pages:
-Settings → Pages → Source: `main` / root.
+Drop the folder into GitHub Pages, Netlify, or Vercel. No build step.
+
+## How it was generated
+
+1. Playwright renders each page with a headless Chromium
+2. All asset responses are intercepted and saved to `/assets`, `/js`
+3. The fully-hydrated HTML is snapshotted
+4. All `framer.com` / `framerusercontent.com` URLs are rewritten to local paths
+5. "Made in Framer" badge and edit links are stripped
+6. Any residual Framer URLs are replaced with `#`
