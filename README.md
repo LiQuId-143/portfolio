@@ -1,20 +1,26 @@
 # LiQuId — Portfolio
 
-Static HTML/CSS/JS portfolio for Romanenkov Kirill, Indonesia-based digital designer.
+Exact HTML mirror of the Framer portfolio at
+https://stale-assistant-536643-b4b367fe9.framer.app/
 
-Rebuild of the original Framer site [stale-assistant-536643-b4b367fe9.framer.app](https://stale-assistant-536643-b4b367fe9.framer.app/) as clean, hand-written code.
+Pages:
+- `index.html` — home
+- `about.html` — about
+- `projects.html` — projects index
+- `projects/shopease-redesign-sprint.html`
+- `projects/summer-vibes-festival-campaign.html`
 
-## Stack
-- HTML5, CSS (custom properties, Grid), vanilla JS
-- Fonts: Antonio (display), Inter (body)
-- Accent color: `#6a71df`
+All assets (fonts, images, bundled JS) are served from Framer's CDN, so the
+site is a single-file-per-page static copy with the original look,
+typography, and animations intact.
 
-## Run
-Open `index.html` in a browser, or serve with any static server:
+## Serve locally
 
 ```
-npx serve .
+python3 -m http.server 8000
+# open http://localhost:8000/
 ```
 
 ## Deploy
-Works on GitHub Pages, Netlify, Vercel, or any static host — no build step.
+
+Works on GitHub Pages, Netlify, Vercel — no build step.
